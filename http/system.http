@@ -1,0 +1,47 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+POST {{baseUrl}}/api/getAllSystemConfig
+Content-Type: application/json
+X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjYwODU0MTh9.k8G3LvPMrKJm5_1Eodzto7X1YAFTz57iKbmolas7oOs
+
+###
+POST {{baseUrl}}/api/updateSystemConfig
+Content-Type: application/json
+X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjYwODU0MTh9.k8G3LvPMrKJm5_1Eodzto7X1YAFTz57iKbmolas7oOs
+
+{
+  "key": "mail_username",
+  "value": "123@qq.com"
+}
+
+###
+
+POST {{baseUrl}}/api/getSystemVersion
+Content-Type: application/json
+X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjYwODU0MTh9.k8G3LvPMrKJm5_1Eodzto7X1YAFTz57iKbmolas7oOs
+
+{}
+
+###
+POST {{baseUrl}}/api/sendTestEmail
+Content-Type: application/json
+X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE3MDk2MDc5NTZ9.XqXwQY3n0UAm_javXgmGeWNq-atA8jrylIKMiJwiFjw
+
+{
+  "mail_host": "smtp.163.com",
+  "mail_port": "465",
+  "mail_alias": "Domain Admin Test",
+  "mail_username": "",
+  "mail_password": "",
+  "subject": "测试邮件标题",
+  "content": "测试邮件内容",
+  "email_list": [""]
+}
+
+###
+
